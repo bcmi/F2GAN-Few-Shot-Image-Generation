@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # F2GAN: Few-Shot Image Generation
 
 Code for our **ACM MM 2020** paper *"F2GAN: Fusing-and-Filling GAN for Few-shot Image Generation"*.
@@ -32,10 +31,11 @@ If you find our work useful in your research, please consider citing:
 
 Few-shot image generation aims at generating images for a new category with only a few images, which can make fast adaptation to a new category especially for those newly emerging categories or long-tail categories, and benefit a wide range of downstream category-aware tasks like few-shot classification. In this paper, we propose a novel fusing-and-filling GAN (F2GAN) to enhance the ability of fusing conditional images. The high-level idea is fusing the high-level features of conditional images and filling in the details of generated image with relevant low-level features of conditional images. In detail, our method contains a fusion generator and a fusion discriminator. In our generator, we interpolate the high-level bottleneck features of multiple conditional images with random interpolation coefficients. Then, the fused high-level feature is upsampled through the decoder to produce a new image. In each upsampling stage, we borrow missing details from the skip-connected shallow encoder block by using our Non-local Attentional Fusion (NAF) module. Precisely, NAF module searches the outputs from shallow encoder blocks of conditional images in a global range, to attend the information of interest for each location in the generated image. In the fusion discriminator, we employ typical adversarial loss and classification loss to enforce the generated images to be close to real images and from the same category of conditional images. To ensure the diversity of generated images, we additionally employ a mode seeking loss and an interpolation regression loss, both of which are related to interpolation coefficients. We have conducted extensive generation and classification experiments on five datasets to demonstrated the effectiveness of our method.
 
-[![Overview of Our CaGNet](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/framework.JPG?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/framework.JPG?raw=true)
+[![Overview of Our CaGNet](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/three/main/figures/combo.jpg?raw=true)
 
-%## Visualization
-%[![Vislualization]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/overview.JPG?raw=true)
+
+
+
 
 ## Poster Presentation
 [![Poster]](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/master/figures/poster.png?raw=true)
