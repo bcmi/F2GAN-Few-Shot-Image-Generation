@@ -36,7 +36,7 @@ def get_args():
     parser.add_argument('--use_wide_connections', nargs="?", type=str, default="False",
                         help='Whether to use wide connections in discriminator')
 
-    parser.add_argument('--matching', nargs="?", type=int, default=0)
+    parser.add_argument('--matching', nargs="?", type=int, default=1)
     parser.add_argument('--fce', nargs="?", type=int, default=0)
     parser.add_argument('--full_context_unroll_k', nargs="?", type=int, default=4)
     parser.add_argument('--average_per_class_embeddings', nargs="?", type=int, default=0)
@@ -56,8 +56,8 @@ def get_args():
     parser.add_argument('--loss_matching_D', type=float, default=0.01)
     parser.add_argument('--loss_sim', type=float, default=1e2)
 
-    parser.add_argument('--is_z2', nargs="?", type=int, default=1)
-    parser.add_argument('--is_z2_vae', nargs="?", type=int, default=1)
+    parser.add_argument('--is_z2', nargs="?", type=int, default=0)
+    parser.add_argument('--is_z2_vae', nargs="?", type=int, default=0)
 
     parser.add_argument('--image_width', nargs="?", type=int, default=128)
     parser.add_argument('--image_height', nargs="?", type=int, default=128)

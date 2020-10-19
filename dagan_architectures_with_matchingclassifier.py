@@ -1602,5 +1602,5 @@ class Discriminator:
             count_parameters(self.variables_shared, name="discriminator_parameters_num")
         self.build = False
 
-        return d_reals, d_fakes, feature_loss, classification_reals, classification_fakes, sim_losses, mode_losses
+        return d_reals, d_fakes, feature_loss, classification_reals, classification_fakes, sim_losses, mode_loss
 
