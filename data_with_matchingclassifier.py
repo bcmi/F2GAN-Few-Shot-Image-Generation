@@ -454,7 +454,7 @@ class OmniglotImbalancedDAGANDataset(DAGANImbalancedDataset):
         self.x = np.array(x_temp)
         # self.x = self.x / np.max(self.x)
         # print('herer',np.max(self.x))
-        x_train, x_val, x_test = self.x[:1200], self.x[1200:1412], self.x[1412:]
+        x_train, x_val, x_test = self.x[:1200], self.x[1200:1411], self.x[1411:]
         # x_train, x_val, x_test = self.x[:12], self.x[0:12], self.x[:]
 
         # x_train = x_train[:last_training_class_index]
@@ -481,7 +481,8 @@ class OmniglotDAGANDataset(DAGANDataset):
         self.x = np.load("../Matching-DAGAN-1wayKshot/datasets/omniglot_data.npy")
         self.x = self.x * 255
         # self.x = self.x / np.max(self.x)
-        x_train, x_val, x_test = self.x[:1200], self.x[1200:1412], self.x[1412:]
+        # x_train, x_val, x_test = self.x[:1200], self.x[1200:1412], self.x[1412:]
+        x_train, x_val, x_test = self.x[:1200], self.x[1200:1411], self.x[1411:]
         print('max value', np.max(self.x))
         # x_train = x_train[:gan_training_index]
         return x_train, x_test, x_val
@@ -501,7 +502,7 @@ class VGGFaceDAGANDataset(DAGANDataset):
         self.x = np.load("../Matching-DAGAN-1wayKshot/datasets/vgg_face_data.npy")
         self.x = self.x * 255
         # self.x = self.x / np.max(self.x)
-        x_train, x_val, x_test = self.x[:1803], self.x[1803:2300], self.x[2300:]
+        x_train, x_val, x_test = self.x[:1802], self.x[1802:1898], self.x[1898:]
         # x_train, x_val, x_test = self.x[:500], self.x[100:120], self.x[2300:2340]
         # self.x = np.load("../Matching-DAGAN-1wayKshot/datasets/test_vggface_c52_s28_data.npy")
         # self.x = self.x / 255
@@ -558,7 +559,7 @@ class emnistDAGANDataset(DAGANDataset):
     def load_dataset(self, gan_training_index):
         self.x = np.load("../Matching-DAGAN-1wayKshot/datasets/emnist.npy")
         # self.x = self.x / np.max(self.x)
-        x_train, x_val, x_test = self.x[:35], self.x[35:42], self.x[42:]
+        x_train, x_val, x_test = self.x[:28], self.x[28:38], self.x[38:]
         # print('maxvalue',np.max(self.x))
         # print('data shape',np.shape(self.x))
 
@@ -641,7 +642,7 @@ class animalsDAGANDataset(DAGANDataset):
         # self.x = self.x / 255
 
         # self.x = np.reshape(self.x, newshape=(2354, 100, 64, 64, 3))
-        x_train, x_val, x_test = self.x[:120], self.x[100:120], self.x[120:]
+        x_train, x_val, x_test = self.x[:119], self.x[119:120], self.x[119:]
         # x_train = x_train[:gan_training_index]
 
         return x_train, x_test, x_val
