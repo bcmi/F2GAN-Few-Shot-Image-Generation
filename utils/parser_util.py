@@ -22,7 +22,7 @@ def get_args():
     parser.add_argument('--continue_from_epoch', nargs="?", type=int, default=-1,
                         help='continue from checkpoint of epoch')
     parser.add_argument('--num_of_gpus', nargs="?", type=int, default=1, help='Number of GPUs to use for training')
-    parser.add_argument('--z_dim', nargs="?", type=int, default=100, help='The dimensionality of the z input')
+    parser.add_argument('--z_dim', nargs="?", type=int, default=128, help='The dimensionality of the z input')
     parser.add_argument('--dropout_rate_value', type=float, default=0,
                         help='A dropout rate placeholder or a scalar to use throughout the network')
     parser.add_argument('--num_generations', nargs="?", type=int, default=32,
