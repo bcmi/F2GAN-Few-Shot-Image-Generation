@@ -54,7 +54,8 @@ More generated reuslts to view [here](https://arxiv.org/pdf/2008.01999.pdf)
   
   ** scipy  
   
-- Click [here](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/main/requirements.txt) to view detailed software dependency            
+- Click [here](https://github.com/bcmi/F2GAN-Few-Shot-Image-Generation/blob/main/requirements.txt) to view detailed software dependency            
+      
   
 
 ### Datasets Preparation 
